@@ -27,6 +27,11 @@ header h1 a{
     color: antiquewhite;
 }
 
+.content-container h1{
+    -webkit-text-stroke: 2px #d2d2d2;
+    cursor: pointer;
+}
+
 .nav-link ul{
     list-style: none;
     display: flex;
@@ -164,6 +169,7 @@ i{
     margin-left: 300px;
     margin-top: 130px;
     -webkit-text-stroke: 2px #d2d2d2;
+    cursor: pointer;
 }
 
 .list{
@@ -231,6 +237,7 @@ i{
     display: flex;
     margin-left: 35%;
     -webkit-text-stroke: 2px #d2d2d2;
+    cursor: pointer;
 }
 
 .skill{
@@ -246,6 +253,7 @@ i{
     height: 500px;
     background-color: lightgrey;
     padding: 50px;
+    margin-bottom: 40px;
     
 }
 
@@ -282,12 +290,115 @@ i{
 
 }
 
+.cat .ills:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
 .cat .ills h2{
     position: absolute;
     bottom: 20px;
     
 }
 
+.containers .content{
+    display: block;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.container .content h1{
+    -webkit-text-stroke: 2px #d2d2d2;
+}
+
+.container{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid black;
+}
+
+.container form #lastname, .container form #mobile{
+    margin-left: 20px;
+}
+
+.container form h4 {
+    font-weight: 300;
+    width: 600;
+    margin-top: 20px;
+}
+
+.container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+}
+.container form #button{
+    border: none;
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.container form #button:hover{
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.cv{
+    display: flex;
+    overflow: hidden;
+    justify-content: right;
+    
+}
+.download-btn{
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: lightgrey;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+.download-btn:hover{
+    color: black;
+}
 
 footer{
     background-color: black;
