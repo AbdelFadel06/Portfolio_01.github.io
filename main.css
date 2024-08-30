@@ -87,8 +87,6 @@ i{
 }
 
 .content-container{
-    
-    height: 100vh;
     background-color: rgb(247, 242, 235);
     padding: 100px 100px;
 }
@@ -128,11 +126,66 @@ i{
     font-size: 1.5em;
 }
 
+/*
+.front{
+    animation: autoshow both;
+    animation-timeline: view(20% 80%);
+}
 
 
+@keyframes autoshow{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+*/
 
 
+.projects{
+    display: flex;
+    overflow: hidden;
+    
+    margin-top: 30px;
+    justify-content: center;
+}
 
+.projects .div{
+    background-color:lightpink;
+    width: 60%;
+    height: 500px;
+    padding: 50px;
+}
+
+.my{
+    text-align: center;
+    margin-top: 130px;
+    -webkit-text-stroke: 2px #d2d2d2;
+}
+
+.list{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.item img{
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+    margin-right: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.list::-webkit-scrollbar{
+    display: none;
+
+}
 
 
 
@@ -140,7 +193,6 @@ footer{
     background-color: black;
     color: antiquewhite;
     width: 100%;
-    
     height: 200px;
 }
 
@@ -152,3 +204,14 @@ footer{
     text-align: center;
 }
 
+footer .logo{
+    margin-bottom: 15px;
+}
+
+footer hr{
+    border: 1px solid antiquewhite;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
