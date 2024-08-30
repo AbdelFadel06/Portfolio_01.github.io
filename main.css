@@ -78,7 +78,7 @@ i{
     font-size: 1.9em;
     font-weight: 1.5em;
     color: antiquewhite;
-    padding: 30px;
+    padding: 30px 20px;
 }
 
 .logo{
@@ -404,7 +404,8 @@ footer{
     background-color: black;
     color: antiquewhite;
     width: 100%;
-    height: 200px;
+    height: 300px;
+    position: relative;
 }
 
 .footer-content{
@@ -413,6 +414,8 @@ footer{
     justify-content: center;
     padding-top: 35px;
     text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 
 footer .logo{
@@ -425,4 +428,31 @@ footer hr{
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+footer .social{
+    display: block;
+    text-align: right;
+}
+
+footer .social h3{
+    margin-right: 280px;
+    font-weight: 600;
+    font-size: 2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+footer .social .social-link{
+    margin-right: 200px;
+}
+
+footer h1{
+    text-align: left;
+    margin-left: 220px;
+    position: absolute;
+    top: 70px;
+    cursor: pointer;
+    
 }
