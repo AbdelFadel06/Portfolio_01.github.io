@@ -14,16 +14,25 @@
             <h1 class="logo"><a href="#aboutme">Abdel<span>~SALIOU</span></a></h1>
 
             <div class="nav-link">
-                <ul>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                    <li onclick=hideSidebar()><a href="#project">works</a></li>
+                    <li onclick=hideSidebar()><a href="#skills">skills</a></li>
+                    <li onclick=hideSidebar()><a href="#contact">contact</a></li>
+                    
+                </ul>
+                <ul class="not">
                     <li><a href="#project">works</a></li>
                     <li><a href="#skills">skills</a></li>
                     <li><a href="#contact">contact</a></li>
+                    
                 </ul>
             </div>
 
             <div class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
+                <i onclick=showSidebar() class="fa-solid fa-bars"></i>
             </div>
+
         </nav>
     </header>
 
@@ -159,6 +168,18 @@
         </div>
     </footer>
 
+
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
 
 </body>
 </html>

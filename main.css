@@ -15,7 +15,6 @@ header{
 header nav{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin: 20px 2%;
@@ -41,7 +40,7 @@ header h1 a{
 .nav-link ul{
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -52,11 +51,13 @@ header h1 a{
     position: relative;
 }
 
+/*
 .nav-link ul li~ li{
     border-left: 1px solid antiquewhite;
 }
+*/
 
-.nav-link ul li a::after{
+.nav-link .not li a::after{
     content: "";
     width: 0;
     height: 2px;
@@ -76,6 +77,9 @@ header h1 a{
 
 a{
     text-decoration: none;
+    display:flex;
+    align-items: center;
+    height: 100%;
 }
 
 hr{
@@ -490,15 +494,49 @@ footer h1{
     
 }
 
-.menu-icon{
-    color: antiquewhite;
-    font-size: 20px;
-}
+
 
 .menu-icon{
     display: none;
 }
 
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    
+}
+
+.nav-link .sidebar{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.nav-link .sidebar li a{
+    height: 50px;
+    width: 100%;
+    color: gray;
+    font-weight: bold;
+}
+
+.nav-link .sidebar li~ li{
+    border-left: none;
+}
+
+.sidebar i{
+    font-size: 1.9em;
+    font-weight: 1.5em;
+    color: gray;
+    padding: 30px 0px;
+}
 
 
 @media(max-width:1200px){
@@ -520,3 +558,17 @@ footer h1{
     
 }
 
+@media(max-width:750px){
+    .nav-link .not{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+}
+
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
