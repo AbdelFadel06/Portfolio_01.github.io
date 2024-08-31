@@ -30,7 +30,7 @@ header h1 a{
 }
 
 .content-container h1{
-    -webkit-text-stroke: 2px #d2d2d2;
+
     cursor: pointer;
 }
 
@@ -115,7 +115,7 @@ body{
 }
 
 .content-container h1{
-    font-size: 5em;
+    font-size: 4vw;
     font-weight: bold;
     margin-bottom: 30px;
     text-align: center;
@@ -134,7 +134,7 @@ body{
     grid-gap: 50px 30px;
     margin: 20px auto 130px auto;
     background-color: aliceblue;
-    padding: 50px;
+    padding: 2%;
 }
 
 .row .left{
@@ -204,7 +204,6 @@ body{
 .my{
     
     margin-top: 130px;
-    -webkit-text-stroke: 2px #d2d2d2;
     cursor: pointer;
 }
 
@@ -270,7 +269,6 @@ body{
 
 .mon{
     margin-top: 130px;
-    -webkit-text-stroke: 2px #d2d2d2;
     cursor: pointer;
     
 }
@@ -294,7 +292,7 @@ body{
 
 .cat{
     display: flex;
-    
+    overflow-x: scroll;
 }
 
 .ills hr{
@@ -339,19 +337,20 @@ body{
     margin-top: 130px;
 }
 
-.container .content h1{
-    -webkit-text-stroke: 2px #d2d2d2;
-}
+
 
 .container{
     min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .container form{
-    width: 670px;
+    box-sizing: border-box;
+    max-width: 670px;
+    width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -362,6 +361,7 @@ body{
 }
 
 .container form input{
+    box-sizing: border-box;
     width: 290px;
     height: 40px;
     padding-left: 10px;
@@ -379,7 +379,7 @@ body{
 
 .container form h4 {
     font-weight: 300;
-    width: 600;
+    
     margin-top: 20px;
 }
 
@@ -391,7 +391,7 @@ body{
     font-size: 15px;
     padding: 10px;
     outline: none;
-    min-width: 600px;
+    width: 100%;
     max-width: 600px;
 }
 .container form #button{
@@ -490,28 +490,33 @@ footer h1{
     
 }
 
-@media(max-width:1200px){
-    .front {
-        font-size: 1.5em;
-        
-    }
+.menu-icon{
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+.menu-icon{
+    display: none;
 }
 
 
 
-@media(max-width:900px){
+@media(max-width:1200px){
     .row{
         width: 80%;
         grid-template-columns: 1fr;
+        background: none;
+    
     }
+
+    
 
     .row .left img{
-        height: 80%;
-        width: 80%;
-        margin: 0px auto;
+        height: 100%;
+        width: 60%;
+        margin: 0 20%;
+        
     }
+    
 }
 
-.front h1{
-    font-size: 13px;
-}
