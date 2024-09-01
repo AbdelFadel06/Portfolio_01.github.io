@@ -255,6 +255,8 @@ body{
     box-sizing: border-box;
     border: 1px solid antiquewhite;
     border-radius: 25px;
+    position: absolute;
+    height: 50px;
 }
 
 .item:hover .overlay{
@@ -263,6 +265,11 @@ body{
 
 
 .list::-webkit-scrollbar{
+    display: none;
+
+}
+
+.cat::-webkit-scrollbar{
     display: none;
 
 }
