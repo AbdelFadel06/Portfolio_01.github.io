@@ -449,15 +449,31 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 35px;
+    padding-top: 30px;
     text-align: center;
     overflow: hidden;
     position: relative;
 }
 
-footer .logo{
-    margin-bottom: 15px;
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
 }
+
+footer ul li{
+    list-style: none;
+    font-size: 1em;
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
 
 footer hr{
     border: 1px solid antiquewhite;
@@ -466,33 +482,18 @@ footer hr{
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 10px;
-}
-
-footer .social{
-    display: block;
-    text-align: right;
-}
-
-footer .social h3{
-    margin-right: 280px;
-    font-weight: 600;
-    font-size: 2em;
-    cursor: pointer;
     margin-top: 20px;
 }
 
-footer .social .social-link{
-    margin-right: 200px;
+
+footer  .social-link{
+    display: flex;
+    padding: 10px 40px;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
-footer h1{
-    text-align: left;
-    margin-left: 220px;
-    position: absolute;
-    top: 70px;
-    cursor: pointer;
-    
-}
 
 
 
